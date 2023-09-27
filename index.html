@@ -1,10 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>New Year, New You</title>
+    <link rel="icon" href="https://www.mailersend.com/favicon/favicon.svg" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
-<h1>10 Books of my choice</h1>
+
+<!--/intro/-->
+
+<section class="container intro" style="text-align: center; margin-top: var(--size-700);">
+        <div class="title">
+         <h1 class="fs-900 fw-bold ls-500 lh-500">New Year, New You<br/></h1>
+         <h2 class="fs-800 fw-bold ls-500 lh-400" style="margin-bottom: var(--size-800)">Transform Your Life with Top 10 Reads</h2>
+            <img src="img/main.png" style="width: 40rem; flex-shrink: 0 ;margin-bottom: var(--size-700)">
+        </div>
+</section>
+
+<section class="container" style="text-align:center; margin-bottom: var(--size-900)">
+    <h3 class="fw-bold fs-800 ls-400" style="margin-bottom: var(--size-500)">I want to</h3>
+    <div class="select-buttons" style="display:inline-flex; gap: var(--size-200);">
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspRead more books next year</button>
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspGain more knowledge</button>
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspExpand my awareness</button>
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspGet into good habits</button>
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspLearn for my career</button>
+        <button class="button-big"><img src="img/icon-check-circle.svg" style="width:1rem;">&nbspKeep up with social issues</button>
+    </div>
+</section>
+
+
+<!--/body/-->
+
+    <section class="content" style="justify-content: flex-start; display: block; margin-top: var(--size-900)">
+
+        <!--nav-->
+        <div class="sticky">
+            <div style="width:100%">
+                <nav class="primary-navigation">
+                    <ul aria-level="primary" role="list" class="nav-list" id="primary-navigation" style="display:flex; align-items: center; flex-wrap: wrap; gap: var(--size-100)">
+                        <li><h5 class="fw-bold fs-500 ls-300" style="margin-right: var(--size-400)">I want to</h5></li>
+                        <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Gain more knowledge &nbsp<img src="img/icon-close.svg"></button></li>
+                        <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Learn for my career &nbsp<img src="img/icon-close.svg"></button></li>
+                        <li><button class="button-plus"><img src="img/icon-add.svg"></button></li>
+                    </ul>
+                    <div style="margin-left: auto; margin-right: var(--size-600);">
+                        <button class="button">My List</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+<!--        &lt;!&ndash;                        dropdown&ndash;&gt;-->
+<!--        <div class="dropdown mylist" style="display: block">-->
+
+<!--            <div class="list-item" style="display: flex; flex-wrap: wrap ; gap: var(&#45;&#45;size-300);">-->
+<!--                <img src="img/book-01.jpg" style="width: 50px">-->
+<!--                <div style="flex-wrap: wrap">-->
+<!--                    <p class="fs-400 fw-medium" style="margin-bottom: var(&#45;&#45;size-200)">Mediations</p>-->
+<!--                    <p class="fs-300 fw-regular" style="opacity: 0.6">by Marcus Aurelius</p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div>-->
+<!--                <button class="button" style="width: 100%;">Buy Now</button>-->
+<!--            </div>-->
+<!--            <div style="display: flex">-->
+<!--                <button class="button-neutral-small" style="width: 50%"><img src="img/icon-share.svg">&nbsp;Share&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
+<!--                <button class="button-neutral-small" style="width: 50%"><img src="img/icon-down.svg">&nbsp;Save&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;                        dropdown end&ndash;&gt;-->
+<!--        nav end-->
+
+<!--        content -->
+        <div class="container books" style="flex-direction: column; justify-content: flex-start; display: flex; flex-wrap: wrap">
+
+<!--            book-01-->
+            <div class="book" style="align-items: flex-start; display: inline-flex; margin-top: var(--size-900)">
+
+                <div class="img-book"><img src="img/book-01.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">Meditations</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Marcus Aurelius</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">304 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Philosophy</div>
+                                    <div class="keyword-simple ">Classic</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        'Their icy blasts are refreshing and restorative. They tell you the worst. And having heard the worst, you feel less bad' Blake Morrison Written in Greek by the only Roman emperor who was also a philosopher, without any intention of publication, the Meditations of Marcus Aurelius offer a remarkable series of challenging spiritual reflections and...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Spritual</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Masterful</div>
+                                <div class="keyword">🤯&nbsp;Pioneer</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+<!--            book01 end-->
+<!--book-02-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-02.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Kai Bird, Martin J. Sherwin</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">784 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Historical</div>
+                                    <div class="keyword-simple">WWII</div>
+                                    <div class="keyword-simple">Biography</div>
+                                    <div class="keyword-simple">Science</div>
+                                    <div class="keyword-simple ">Pulitzer prize winner</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        THE INSPIRATION FOR THE MAJOR MOTION PICTURE OPPENHEIMER • "A riveting account of one of history’s most essential and paradoxical figures.”—Christopher Nolan
+                                        #1 NEW YORK TIMES BESTSELLER • PULITZER PRIZE WINNER • The definitive biography of J. Robert Oppenheimer, one of the iconic figures of the twentieth century, a brilliant physicist who led the effort to build the atomic bomb for his country in a time of war...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Provocative</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
+                                <div class="keyword">🤯&nbsp;Pioneer</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Captivating</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book02 end-->
+
+            <!--book-03-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-03.webp"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">The 48 Laws Of Power: A Joost Elfers Production</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Robert Greene</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">452 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Self-develop</div>
+                                    <div class="keyword-simple">Meditation</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        If power is your ultimate goal, this is the book you need' The Times Amoral, cunning, ruthless, and instructive, this piercing work distils three thousand years of the history of power into forty-eight well-explicated laws. As attention-grabbing in its design as it is in its content, this bold volume outlines the laws of power in their unvarnished essence, synthesizing the philosophies of Machiavelli, Sun-tzu, Carl von Clausewitz, and other great thinkers.                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Emotional depth</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Thought-provoking</div>
+                                <div class="keyword">🤯&nbsp;Riveting</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Provocative</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book03 end-->
+
+            <!--book04-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-04.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">Selective Breeding and the Birth of Philosophy</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Costin Vlad Alamariu</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">368 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Philosophy</div>
+                                    <div class="keyword-simple">Conversation</div>
+                                    <div class="keyword-simple">Biology</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        This is an argument that philosophy is born with and dependent on the idea of nature; and that this idea was first discovered or manifested in the perception of biological reality, in particular the perception of hereditary transmission of physical and behavioral qualities, together with the perception that moral and legal codes are relative and contingent. It was generally only within the spiritual and intellectual horizon...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Emotional depth</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Thought-provoking</div>
+                                <div class="keyword">🤯&nbsp;Masterful</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Authenticity</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book04 end-->
+
+            <!--book05-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-05.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">Lessons in Chemistry</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Bonnie Garmus</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">400 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Science</div>
+                                    <div class="keyword-simple">Provocative</div>
+                                    <div class="keyword-simple">Biology</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        Your ability to change everything - including yourself - starts here Chemist Elizabeth Zott is not your average woman. In fact, Elizabeth Zott would be the first to point out that there is no such thing. But it's the early 1960s and her all-male team at Hastings Research Institute take a very unscientific view of equality. Forced to resign, she reluctantly signs on as the host of a cooking show, Supper at Six . But her revolutionary approach to cooking, fuelled by scientific and rational commentary, grabs the attention of a nation.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Sparky</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Hilarious</div>
+                                <div class="keyword">🤯&nbsp;Rip-roaring</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Emotional depth</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book05 end-->
+
+            <!--book06-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-06.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">101 Essays That Will Change The Way You Think</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Brianna Wiest</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">447 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Self-develop</div>
+                                    <div class="keyword-simple">Theraphy</div>
+                                    <div class="keyword-simple">Creative</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        101 Essays That Will Change The Way You Think, the global bestseller and social media phenomenon, is a collection of author Brianna Wiest's most beloved pieces of writing. Her meditations include why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life. Regardless, each will...
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Provocative</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
+                                <div class="keyword">🤯&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
+                                <div class="keyword">🧑‍&nbsp;Masterful</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book06 end-->
+
+            <!--book07-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-07.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">The Creative Act: A Way of Being</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Rick Rubin</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">368 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Creative</div>
+                                    <div class="keyword-simple">Conversation</div>
+                                    <div class="keyword-simple">Philosophy</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        THE SUNDAY TIMES BESTSELLER Many famed music producers are known for a particular sound that has its day and then ages out. Rick Rubin is known for something else: creating a space where artists of all different genres and traditions can home in on who they really are and what they really offer. He has made a practice of helping people transcend their self-imposed expectations in order to reconnect with a state of innocence from which the surprising becomes inevitable.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Thought-provoking</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Creative</div>
+                                <div class="keyword">🤯&nbsp;Unique voice</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Provocative</div>
+                                <div class="keyword">🧑‍&nbsp;Captivating</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book07 end-->
+
+            <!--book08-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-08.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">Thinking, Fast and Slow</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Daniel Kahneman</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">512 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Sociology</div>
+                                    <div class="keyword-simple">Behavioral Psychology</div>
+                                    <div class="keyword-simple">Philosophy</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        One of the most influential books of the 21st century: the ground-breaking psychology classic - over 10 million copies sold - that changed the way we think about thinking
+                                        'There have been many good books on human rationality and irrationality, but only one masterpiece. That masterpiece is Thinking, Fast and Slow' Financial Times
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Provocative</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Authenticity</div>
+                                <div class="keyword">🤯&nbsp;Masterful</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Riveting</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book08 end-->
+
+            <!--book09-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-09.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">Never Split the Difference: Negotiating as if Your Life</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Chris Voss, Tahl Raz</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">288 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Negotiation</div>
+                                    <div class="keyword-simple">Technic</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        A former FBI hostage negotiator offers a field-tested approach to negotiating - effective in any situation. 'Riveting' Adam Grant 'Stupendous ' The Week 'Brilliant' Guardian
+                                        After a stint policing the rough streets of Kansas City, Missouri, Chris Voss joined the FBI, where his career as a kidnapping negotiator brought him face-to-face with bank robbers, gang leaders and terrorists. Never Split the Difference takes you inside his world of high-stakes negotiations, revealing the nine key principles that helped Voss and his...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Provocating</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Helpful</div>
+                                <div class="keyword">🤯&nbsp;Masterful</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍&nbsp;Authenticity</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book09 end-->
+
+            <!--book10-->
+            <div class="book" style="align-items: flex-start; display: inline-flex">
+
+                <div class="img-book"><img src="img/book-10.jpg"/></div>
+
+                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
+
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-700); display: flex;">
+
+                            <div class="book-text-head" style="flex-direction: column; align-items: flex-start; gap: var(--size-300); display: flex">
+                                <div>
+                                    <p class="h3">The Coming Wave</p>
+                                </div>
+                                <div class="book-info" style="gap: var(--size-200); display: inline-flex; align-items: center; flex-wrap: wrap">
+                                    <div><p class="h6">by Mustafa Suleyman, Michael Bhaskar</p></div>
+                                    <div><p class="fs-300 fw-regular" style="opacity: 0.6">500 pages | English</p></div>
+                                </div>
+                            </div>
+
+                            <div class="book-text-body" style="flex-direction: column; justify-content: flex-start; gap: var(--size-400); display: flex">
+
+                                <div class="book-keywords" style="display: inline-flex; flex-wrap: wrap" >
+                                    <div class="keyword-simple">Historical</div>
+                                    <div class="keyword-simple">Social issue</div>
+                                    <div class="keyword-simple">Science</div>
+                                </div>
+                                <div>
+                                    <p class="fs-500 fw-regular lh-500 ls-300">
+                                        We are approaching a critical threshold in the history of our species. Everything is about to change. Soon we will live surrounded by AIs. They will carry out complex tasks - operating businesses, producing unlimited digital content,...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
+                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <div style="display: inline-flex; flex-wrap: wrap" >
+                                <div class="keyword">🙏&nbsp;Authenticity</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
+                                <div class="keyword">🤯&nbsp;Captivating</div>
+                                <div class="keyword">🧑‍🎓&nbsp;Masterful</div>
+                                <div class="keyword">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons" style="display: inline-flex">
+                        <button class="button-secondary">Buy Now</button>
+                        <button class="button-third">Add to List</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--book10 end-->
+
+        </div>
+    </section>
+
+<!--        outro-->
+
+    <section class="container outro bg-accent-sky" style="width: 100%; flex-direction: column; align-items: center; display: inline-flex; position: relative; padding: var(--size-900) 0;">
+            <h5 class="fs-600 fw-semi-bold text-primary-400" style="margin-bottom: var(--size-600);">Are you ready to transform with books?</h5>
+            <div class="buttons" style="display: inline-flex">
+                <button class="button">Buy all Books</button>
+                <button class="button-neutral">Add all Books to List</button>
+            </div>
+    </section>
+
+<!--outro end-->
+
+<!--        footer-->
+
+        <section class="bg-neutral-100 bg-neutral-100 fs-400 fw-regular" style="width:100%">
+        <section class="container footer" style="position: relative;">
+            <div style="margin-bottom: var(--size-300);">© 2020 - 2023 MailerSend.</div>
+            <ul class="fs-300" style="gap: var(--size-400); display: inline-flex">
+                <li><a href="https://www.mailersend.com/legal">Terms of Service</a> </li>
+                <li><a href="https://www.mailersend.com/report-abuse">Report abuse</a></li>
+                <li><a href="https://www.mailersend.com">Cookies Settings</a></li>
+            </ul>
+        </section>
+        </section>
+<!--footer end-->
+
 </body>
 </html>
