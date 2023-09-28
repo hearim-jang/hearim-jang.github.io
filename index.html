@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>New Year, New You</title>
     <link rel="icon" href="https://www.mailersend.com/favicon/favicon.svg" type="image/png">
 
@@ -11,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 
 <section class="container intro" style="text-align: center; margin-top: var(--size-700);">
         <div class="title">
-         <h1 class="fs-900 fw-bold ls-500 lh-500">New Year, New You<br/></h1>
+         <h1 class="fs-900 fw-bold ls-500 lh-300" style="margin-bottom: var(--size-200)">New Year, New You<br/></h1>
          <h2 class="fs-800 fw-bold ls-500 lh-400" style="margin-bottom: var(--size-800)">Transform Your Life with Top 10 Reads</h2>
             <img src="img/main.png" style="width: 40rem; flex-shrink: 0 ;margin-bottom: var(--size-700)">
         </div>
@@ -40,55 +43,68 @@
 
 <!--/body/-->
 
-    <section class="content" style="justify-content: flex-start; display: block; margin-top: var(--size-900)">
+    <section class="content" style="display: block; margin-top: var(--size-900)">
 
         <!--nav-->
-        <div class="sticky">
-            <div style="width:100%">
-                <nav class="primary-navigation">
-                    <ul aria-level="primary" role="list" class="nav-list" id="primary-navigation" style="display:flex; align-items: center; flex-wrap: wrap; gap: var(--size-100)">
-                        <li><h5 class="fw-bold fs-500 ls-300" style="margin-right: var(--size-400)">I want to</h5></li>
-                        <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Gain more knowledge &nbsp<img src="img/icon-close.svg"></button></li>
-                        <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Learn for my career &nbsp<img src="img/icon-close.svg"></button></li>
-                        <li><button class="button-plus"><img src="img/icon-add.svg"></button></li>
-                    </ul>
-                    <div style="margin-left: auto; margin-right: var(--size-600);">
-                        <button class="button">My List</button>
-                    </div>
-                </nav>
-            </div>
-        </div>
-<!--        &lt;!&ndash;                        dropdown&ndash;&gt;-->
-<!--        <div class="dropdown mylist" style="display: block">-->
+        <header class="sticky">
+            <div class="container primary-nav" style="display: flex; width: 100%">
 
-<!--            <div class="list-item" style="display: flex; flex-wrap: wrap ; gap: var(&#45;&#45;size-300);">-->
-<!--                <img src="img/book-01.jpg" style="width: 50px">-->
-<!--                <div style="flex-wrap: wrap">-->
-<!--                    <p class="fs-400 fw-medium" style="margin-bottom: var(&#45;&#45;size-200)">Mediations</p>-->
-<!--                    <p class="fs-300 fw-regular" style="opacity: 0.6">by Marcus Aurelius</p>-->
-<!--                </div>-->
-<!--            </div>-->
+                        <div>
+                        <ul aria-level="primary" role="list" class="nav-list" style="align-items: center; display: flex; flex-wrap: wrap;">
+                            <li><h5 class="fw-bold fs-500 ls-300" style="margin-right: var(--size-400)">I want to</h5></li>
+                            <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Gain more knowledge &nbsp<img src="img/icon-close.svg"></button></li>
+                            <li><button class="button-secondary" style="padding: 0.875rem 1rem; ">Learn for my career &nbsp<img src="img/icon-close.svg"></button></li>
+                            <li><button class="button-plus"><img src="img/icon-add.svg"></button></li>
+                        </ul>
+                        </div>
+                        <div class="my-list">
+                            <button class="button">My List</button>
+                        </div>
 
-<!--            <div>-->
-<!--                <button class="button" style="width: 100%;">Buy Now</button>-->
+<!--                    &lt;!&ndash;dropdown&ndash;&gt;-->
+<!--                    <div class="dropdown">-->
+<!--                        <li>-->
+<!--                            <div class="list-item" style="display: flex; flex-wrap: wrap ; gap: var(&#45;&#45;size-300);">-->
+<!--                                <div class="checkbox"></div>-->
+<!--                                <img src="img/book-01.jpg" style="width: 3rem">-->
+<!--                                <div style="flex-wrap: wrap">-->
+<!--                                    <p class="fs-400 fw-medium" style="margin-bottom: var(&#45;&#45;size-200)">Mediations</p>-->
+<!--                                    <p class="fs-300 fw-regular" style="opacity: 0.6">by Marcus Aurelius</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div>-->
+<!--                                <button class="button" style="width: 254px; margin-bottom: var(&#45;&#45;size-200);">Buy Now</button>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div style="display: flex; margin-left: var(&#45;&#45;size-200)">-->
+<!--                                <div style="width:100%">-->
+<!--                                    <button class="button-neutral-small"><img src="img/icon-share.svg">&nbsp;Share&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
+<!--                                </div>-->
+<!--                                <div style="width:100%">-->
+<!--                                    <button class="button-neutral-small" style="margin-left: 0"><img src="img/icon-down.svg">&nbsp;Save&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;dropdown end&ndash;&gt;-->
 <!--            </div>-->
-<!--            <div style="display: flex">-->
-<!--                <button class="button-neutral-small" style="width: 50%"><img src="img/icon-share.svg">&nbsp;Share&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
-<!--                <button class="button-neutral-small" style="width: 50%"><img src="img/icon-down.svg">&nbsp;Save&nbsp;<img src="img/icon-chevron-down.svg"></button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;                        dropdown end&ndash;&gt;-->
-<!--        nav end-->
+        </header>
 
-<!--        content -->
+
+<!--nav end-->
+
+<!--content -->
         <div class="container books" style="flex-direction: column; justify-content: flex-start; display: flex; flex-wrap: wrap">
 
 <!--            book-01-->
-            <div class="book" style="align-items: flex-start; display: inline-flex; margin-top: var(--size-900)">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-01.jpg"/></div>
 
-                <div class="book-text" style="flex-direction: column; justify-content: flex-start; gap: var(--size-700); display: inline-flex; ">
+                <div class="book-text" style="flex-direction: column; gap: var(--size-700); display: flex; ">
 
                     <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: var(--size-600); display: flex; ">
 
@@ -121,7 +137,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Spritual</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Masterful</div>
@@ -132,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -142,7 +158,7 @@
 
 <!--            book01 end-->
 <!--book-02-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-02.jpg"/></div>
 
@@ -183,7 +199,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+<p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Provocative</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
@@ -195,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -206,7 +222,7 @@
             <!--book02 end-->
 
             <!--book-03-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-03.webp"/></div>
 
@@ -242,7 +258,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Emotional depth</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Thought-provoking</div>
@@ -254,7 +270,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -265,7 +281,7 @@
             <!--book03 end-->
 
             <!--book04-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-04.jpg"/></div>
 
@@ -303,7 +319,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                        <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Emotional depth</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Thought-provoking</div>
@@ -315,7 +331,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -326,7 +342,7 @@
             <!--book04 end-->
 
             <!--book05-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-05.jpg"/></div>
 
@@ -364,7 +380,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Sparky</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Hilarious</div>
@@ -376,7 +392,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -387,7 +403,7 @@
             <!--book05 end-->
 
             <!--book06-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-06.jpg"/></div>
 
@@ -424,7 +440,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Provocative</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
@@ -436,7 +452,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -447,7 +463,7 @@
             <!--book06 end-->
 
             <!--book07-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-07.jpg"/></div>
 
@@ -485,7 +501,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Thought-provoking</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Creative</div>
@@ -497,7 +513,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -508,7 +524,7 @@
             <!--book07 end-->
 
             <!--book08-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-08.jpg"/></div>
 
@@ -547,7 +563,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Provocative</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Authenticity</div>
@@ -559,7 +575,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -570,7 +586,7 @@
             <!--book08 end-->
 
             <!--book09-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-09.jpg"/></div>
 
@@ -608,7 +624,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Provocating</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Helpful</div>
@@ -620,7 +636,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -631,7 +647,7 @@
             <!--book09 end-->
 
             <!--book10-->
-            <div class="book" style="align-items: flex-start; display: inline-flex">
+            <div class="book">
 
                 <div class="img-book"><img src="img/book-10.jpg"/></div>
 
@@ -669,7 +685,7 @@
                         </div>
 
                         <div class="book-keywords-from-reviewers" style="flex-direction: column; gap: var(--size-300); display: flex">
-                            <div><h5 class="fs-500 fw-semi-bold">Keywords from Reviewers</h5></div>
+                            <p class="h5">Keywords from Reviewers</p>
                             <div style="display: inline-flex; flex-wrap: wrap" >
                                 <div class="keyword">🙏&nbsp;Authenticity</div>
                                 <div class="keyword">🧑‍🎓&nbsp;Riveting</div>
@@ -680,7 +696,7 @@
                         </div>
                     </div>
 
-                    <div class="buttons" style="display: inline-flex">
+                    <div class="buttons">
                         <button class="button-secondary">Buy Now</button>
                         <button class="button-third">Add to List</button>
                     </div>
@@ -694,13 +710,14 @@
     </section>
 
 <!--        outro-->
-
-    <section class="container outro bg-accent-sky" style="width: 100%; flex-direction: column; align-items: center; display: inline-flex; position: relative; padding: var(--size-900) 0;">
-            <h5 class="fs-600 fw-semi-bold text-primary-400" style="margin-bottom: var(--size-600);">Are you ready to transform with books?</h5>
-            <div class="buttons" style="display: inline-flex">
-                <button class="button">Buy all Books</button>
-                <button class="button-neutral">Add all Books to List</button>
+    <section class="bg-accent-sky" style="width:100%">
+    <section class="container outro" style="flex-direction: column; align-items: center; display: flex; padding: var(--size-900) 0;">
+            <div class="fs-600 fw-semi-bold text-primary-400 lh-400" style="margin-bottom: var(--size-600); text-align: center">Are you ready to transform with books?</div>
+            <div class="buttons" style="justify-content: center;">
+                <div><button class="button">Buy all Books</button></div>
+                <div><button class="button-neutral">Add all Books to List</button></div>
             </div>
+    </section>
     </section>
 
 <!--outro end-->
@@ -710,8 +727,8 @@
         <section class="bg-neutral-100 bg-neutral-100 fs-400 fw-regular" style="width:100%">
         <section class="container footer" style="position: relative;">
             <div style="margin-bottom: var(--size-300);">© 2020 - 2023 MailerSend.</div>
-            <ul class="fs-300" style="gap: var(--size-400); display: inline-flex">
-                <li><a href="https://www.mailersend.com/legal">Terms of Service</a> </li>
+            <ul class="fs-300" style="gap: var(--size-400); display: inline-flex; flex-wrap: wrap">
+                <li><a href="https://www.mailersend.com/legal">Terms of Service</a></li>
                 <li><a href="https://www.mailersend.com/report-abuse">Report abuse</a></li>
                 <li><a href="https://www.mailersend.com">Cookies Settings</a></li>
             </ul>
