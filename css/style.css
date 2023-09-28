@@ -374,7 +374,18 @@ a:hover {
     width: 100%;
 }
 
+.book-text-primary {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--size-700);
+    display: flex;
+}
+
 @media (max-width: 768px) {
+    .book {
+        margin-bottom: var(--size-700);
+    }
     .img-book {
         width: 30%;
         min-width: 80px;
@@ -390,6 +401,18 @@ a:hover {
         width: 64px;
         margin-right: var(--size-500);
     }
+}
+
+.book-text-body {
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.book-keywords {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--size-200);
 }
 
 .h3 {
