@@ -242,9 +242,9 @@ a:hover {
     letter-spacing: 0;
     color: var(--clr-neutral-900);
     background: var(--clr-white);
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     border-width: 2px;
-    border-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0,0,0, 0.1);
     padding: var(--size-400) var(--size-600) ;
     margin-right: 0;
 }
@@ -253,6 +253,10 @@ a:hover {
     background-color: var(--clr-background-400);
     border-color: var(--clr-primary-400);
     padding: 0.875rem var(--size-600) 1.125rem var(--size-600);
+}
+
+.button-big:hover svg {
+    color: var(--clr-primary-400);
 }
 
 .button-big:focus-within {
@@ -301,10 +305,15 @@ a:hover {
     }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 769px) {
     .my-list {
         margin-left: auto;
     }
+}
+
+.nav-list li .button-secondary {
+    padding: 0.875rem 1rem;
+    font-weight: var(--fw-medium);
 }
 
 .select-buttons {
@@ -346,7 +355,12 @@ a:hover {
     border-style: solid;
     border-bottom: rgba(0,0,0, 0.3);
 }
-
+@media (max-width: 425px) {
+    .title h1 {
+        width: 240px;
+        margin: auto;
+    }
+}
 
 
 /*books*/
@@ -372,9 +386,20 @@ a:hover {
 
 .book-text {
     width: 100%;
+    flex-direction: column;
+    gap: var(--size-700);
+    display: flex;
 }
 
 .book-text-primary {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--size-700);
+    display: flex;
+}
+
+.book-text-primary-2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -403,9 +428,28 @@ a:hover {
     }
 }
 
+.book-info {
+    gap: var(--size-200);
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .book-text-body {
     flex-direction: column;
     justify-content: flex-start;
+    display: flex;
+}
+
+/*@media (max-width: 425px) {*/
+/*    .book-text-body p {*/
+/*        line-height: var(--lh-500);*/
+/*    }*/
+/*}*/
+
+.book-keywords-from-reviewers {
+    flex-direction: column;
+    gap: var(--size-300);
     display: flex;
 }
 
@@ -413,6 +457,13 @@ a:hover {
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: var(--size-200);
+}
+
+.book-text-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-300);
+    display: flex;
 }
 
 .h3 {
