@@ -365,6 +365,22 @@ a:hover {
 
 /*books*/
 
+.books {
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--size-800);
+    margin-bottom: var(--size-800);
+}
+
+@media (max-width: 425px ){
+    .books {
+    margin-top: var(--size-700);
+    margin-bottom: var(--size-700);
+    }
+}
+
 .book {
     --max-width: 1200px;
     width: min(var(--max-width), 100% - (var(--padding)*1.5));
@@ -440,12 +456,6 @@ a:hover {
     justify-content: flex-start;
     display: flex;
 }
-
-/*@media (max-width: 425px) {*/
-/*    .book-text-body p {*/
-/*        line-height: var(--lh-500);*/
-/*    }*/
-/*}*/
 
 .book-keywords-from-reviewers {
     flex-direction: column;
